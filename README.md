@@ -8,7 +8,6 @@ This module shows how to harden your Ubuntu host according to the Centre for Int
 DEPENDECES
 You should install this modules (puppet module install XXXX)
 
-example42-sysctl
 
 
 
@@ -24,11 +23,12 @@ USING THESE CONTROLS DOES NOT MAKE YOUR HOST 100% SECURE.  IT COULD ALSO RESTRIC
 Requirements
 ------------
 
-example42-sysctl
-* NA
+module example42-sysctl
+module example42-fail2ban
+module ntp
 
 Usage
 -----
 
-    include cishardening
+    include cishardening and edit ntp.pp , issue.pp and ssh.pp to correct your settings
 

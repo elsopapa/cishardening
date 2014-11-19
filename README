@@ -24,8 +24,8 @@ Requirements
 ------------
 
 module example42-sysctl
-module example42-fail2ban
-module ntp
+module netmanagers-puppet-fail2ban
+module puppetlabs-ntp
 
 Usage
 -----

@@ -24,6 +24,7 @@ USING THESE CONTROLS DOES NOT MAKE YOUR HOST 100% SECURE.  IT COULD ALSO RESTRIC
 Requirements
 ------------
 
+example42-sysctl
 * NA
 
 Usage

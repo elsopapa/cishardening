@@ -4,17 +4,16 @@ class cishardening {
   
   
   # 2.3 Configure SSH
-  #include cishardening::ssh
+  include cishardening::ssh
 
   # 2.4 Enable System Accounting
-  #include cishardening::sar
+  include cishardening::sar
 
   # 3 Disable Standard Services
-  # 4 Minimize boot services
-  #include cishardening::services
+    include cishardening::services
 
   # 4.1 Set Daemon umask
-  #include cishardening::umask
+  	include cishardening::securethings
 
   # 5.1 Network Parameter Modifications
   include cishardening::sysctl
@@ -38,6 +37,9 @@ class cishardening {
 
   # 10.1 Create Warnings For Network And Physical Access Services
   include cishardening::issue
+  
+  # delete some bad software
+  include cishardening::removepackages
 
   # 11.5 Restrict permissions to 0644 on /usr/share/man and /usr/share/doc content
   include cishardening::man

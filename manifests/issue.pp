@@ -1,6 +1,6 @@
 class cishardening::issue {
 
-$company = "XXXX"
+$company = "xxxx"
 
   file { [ '/etc/issue', '/etc/issue.net', '/etc/motd' ]:
     content => template('cishardening/issue.erb'),

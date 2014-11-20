@@ -18,5 +18,9 @@ package { "xinetd":
 }
 
  
+package { "prelink":
+    ensure => "absent"
+}
+ 
 
 }

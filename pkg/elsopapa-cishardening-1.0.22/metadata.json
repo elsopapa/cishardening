@@ -1,0 +1,21 @@
+{
+  "name": "elsopapa-cishardening",
+  "version": "1.0.22",
+  "author": "elsopapa",
+  "summary": "CIS HARDENING FOR UBUNTU",
+  "license": "Apache 2.0",
+  "source": "https://github.com/elsopapa/cishardening.git",
+  "project_page": "https://github.com/elsopapa/cishardening",
+  "issues_url": "https://github.com/elsopapa/cishardening/issues",
+  "tags": [
+    "cis",
+    "hardening ubuntu",
+    "hardening"
+  ],
+  "dependencies": [
+    {"name":"puppetlabs/ntp","version_requirement":">=3.3.0"},
+    {"name":"netmanagers/fail2ban","version_requirement":">= 1.4.0"},
+    {"name":"example42/sysctl","version_requirement":">= 2.0.15"},
+    {"name":"puppetlabs/concat","version_requirement":">= 1.1.2"}
+  ]
+}

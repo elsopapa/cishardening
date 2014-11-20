@@ -12,7 +12,7 @@ class cishardening {
   # 3 Disable Standard Services
     include cishardening::services
 
-  # 4.1 Set Daemon umask
+  # 4.1 Set some secure confs
   	include cishardening::securethings
 
   # 5.1 Network Parameter Modifications
@@ -38,7 +38,7 @@ class cishardening {
   # 10.1 Create Warnings For Network And Physical Access Services
   include cishardening::issue
   
-  # delete some bad software
+  # delete some bad(?) software
   include cishardening::removepackages
 
   # 11.5 Restrict permissions to 0644 on /usr/share/man and /usr/share/doc content
